@@ -1,9 +1,11 @@
-import { useState } from 'react'
-
+import { useState } from 'react';
+import Homepage from './Homepage';
 
 function App() {
  return(
-  <div>instagram clone</div>
+  <div className='app'>
+    <Homepage />
+  </div>
  )
 }
 

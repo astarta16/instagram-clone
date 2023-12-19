@@ -4,7 +4,7 @@ import "./Sidenav.css";
 function Sidenav() {
   return (
     <div>
-      
+      sidenav
     </div>
   )
 }

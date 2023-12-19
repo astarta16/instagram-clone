@@ -4,7 +4,7 @@ import './Timeline.css';
 function Timeline() {
   return (
     <div>
-      
+      timeline
     </div>
   )
 }
