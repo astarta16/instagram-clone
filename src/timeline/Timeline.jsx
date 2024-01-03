@@ -1,9 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Timeline.css";
 import Suggestion from "./Sugesstion";
 import Post from "./posts/Post";
 
 function Timeline() {
+  const [posts, setPosts] = useState([
+    {
+      user: "nini",
+      postImage: "",
+      likes:12,
+      timespamp: "2d"
+    },
+    {
+      user: "nini",
+      postImage: "",
+      likes:12,
+      timespamp: "2d"
+    },
+    {
+      user: "nini",
+      postImage: "",
+      likes:12,
+      timespamp: "2d"
+    },
+  ])
+
   return (
     <div className="timeline">
       <div className="timeline_left">
