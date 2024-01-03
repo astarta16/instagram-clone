@@ -32,9 +32,9 @@ function Timeline() {
     <div className="timeline">
       <div className="timeline_left">
         <div className="timeline_posts">
-          <Post />
-          <Post />
-          <Post />
+          {posts.map((post) => (
+            <Post />
+          ))};
         </div>
       </div>
       <div className="timeline_right">
