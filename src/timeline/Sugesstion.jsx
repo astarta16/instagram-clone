@@ -3,8 +3,12 @@ import './Sugesstion.css';
 
 function Suggestion() {
   return (
-    <div>
-      suggestions
+    <div className='suggestions'>
+      <div className="suggestions_title">sugestions for you</div>
+      <div className="sugesstions_username">
+        <div className='suggestion_username'></div>
+      </div>
+      
     </div>
   )
 }
