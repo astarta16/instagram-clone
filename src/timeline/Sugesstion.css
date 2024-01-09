@@ -1,0 +1,18 @@
+.suggestions {
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+.suggestions_title {
+  color: gray;
+  font-weight: bold;
+}
+
+.username_left {
+  display: inline;
+}
+
+.username_info {
+  display: flex;
+  flex-direction: column;
+}
