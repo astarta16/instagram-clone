@@ -22,3 +22,16 @@
     font-size: 12px;
 }
 
+.suggestion_username {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.follow_button {
+    color: #0095f9;
+    font-weight: bold;
+    background: 0;
+    border: 0;
+}
+
