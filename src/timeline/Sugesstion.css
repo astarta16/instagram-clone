@@ -35,3 +35,7 @@
     border: 0;
 }
 
+.follow_button:hover {
+    color: white;
+    cursor: pointer;
+}
