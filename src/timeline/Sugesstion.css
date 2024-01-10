@@ -50,3 +50,25 @@
 .avatar {
   margin-right: 10px;
 }
+
+@media (max-width: 768px) {
+  .suggestions {
+    margin-right: 10px;
+  }
+
+  .suggestions_title,
+  .relation,
+  .username {
+    font-size: smaller;
+  }
+
+  .username_left,
+  .suggestion_username {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .follow_button {
+    font-size: smaller;
+  }
+}
