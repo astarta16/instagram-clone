@@ -1,12 +1,11 @@
-// import Homepage from "./Homepage";
-import "./App.css";
-import { Button } from "@chakra-ui/react";
+import { Route, Routes } from "react-router-dom";
+import HomePage from "./pages/HomePage/HomePage";
+
 function App() {
   return (
-    <>
-        <Button>hi</Button>
-
-    </>
+    <Routes>
+      <Route path="/" element={<HomePage />}></Route>
+    </Routes>
   );
 }
 
