@@ -1,11 +1,12 @@
-import Homepage from "./Homepage";
+// import Homepage from "./Homepage";
 import "./App.css";
-
+import { Button } from "@chakra-ui/react";
 function App() {
   return (
-    <div className="app">
-      <Homepage />
-    </div>
+    <>
+        <Button>hi</Button>
+
+    </>
   );
 }
 
