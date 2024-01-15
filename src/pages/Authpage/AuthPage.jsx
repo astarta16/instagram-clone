@@ -1,10 +1,13 @@
+import { Container, Flex } from '@chakra-ui/react'
 import React from 'react'
 
-function AuthPage() {
+const AuthPage =() => {
   return (
-    <div>Auth
-      
-    </div>
+   <Flex minH={"100vh"} justifyContent={"center"} alignItems={"center"} px = {4}>
+    <Container maxW={Container.md} padding={0}>
+
+    </Container>
+   </Flex>
   )
 }
 
