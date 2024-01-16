@@ -8,7 +8,8 @@ const AuthPage = () => {
         <Box display={{ base: "none", md: "block" }}>
           <Image src="/auth.png" h={650} alt="Phone img"></Image>
         </Box>
-        <VStack>
+        <VStack spacing={4} align={"stretch"}>
+          <AuthForm />
             
         </VStack>
       </Container>
