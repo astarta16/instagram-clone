@@ -59,6 +59,12 @@ const AuthForm = () => {
           </Flex>
         </VStack>
       </Box>
+
+      <Box border={"1px olid gray"} borderRadius={4} padding={5}>
+        <Flex alignItems={"center"} justifyContent={"center"}>
+          <Box></Box>
+        </Flex>
+      </Box>
     </>
   );
 };
