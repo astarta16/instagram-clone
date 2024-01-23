@@ -62,7 +62,9 @@ const AuthForm = () => {
 
       <Box border={"1px olid gray"} borderRadius={4} padding={5}>
         <Flex alignItems={"center"} justifyContent={"center"}>
-          <Box></Box>
+          <Box mx={2} fontSize={14}>
+            {isLogin ? "Don't have an account?" : "Already have an account?"}
+          </Box>
         </Flex>
       </Box>
     </>
