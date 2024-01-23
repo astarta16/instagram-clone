@@ -65,6 +65,7 @@ const AuthForm = () => {
           <Box mx={2} fontSize={14}>
             {isLogin ? "Don't have an account?" : "Already have an account?"}
           </Box>
+          <Box>{isLogin ? "sign Up" : "Log in"}</Box>
         </Flex>
       </Box>
     </>
