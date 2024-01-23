@@ -8,9 +8,23 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const AuthForm = () => {
   const [isLogin, setLogin] = useState(true);
+  const navigate = useNavigate();
+  const [inputs, setInputs] = useState({
+    email: "",
+    password: "",
+    confirmPassword: "",
+  });
+  const handleAuth = () => {
+    if (inputs.email || inputs.password || inputs.confirmPassword) {
+      alert("please fill all the fields");
+      return;
+    }
+    navigate("/home");
+  };
 
   return (
     <>
@@ -21,17 +35,40 @@ const AuthForm = () => {
             h={24}
             cursor={"pointer"}
             alt="instagram logo"></Image>
-          <Input placeholder="Email" fontSize={14} type="email"></Input>
-          <Input placeholder="Password" fontSize={14} type="password"></Input>
+          <Input
+            placeholder="Email"
+            fontSize={14}
+            type="email"
+            value={inputs.email}
+            onChange={(e) =>
+              setInputs({ ...inputs, email: e.target.value })
+            }></Input>
+          <Input
+            placeholder="Password"
+            fontSize={14}
+            type="password"
+            value={inputs.password}
+            onChange={(e) =>
+              setInputs({ ...inputs, password: e.target.value })
+            }></Input>
 
           {!isLogin ? (
             <Input
               placeholder="Confirm Password"
               fontSize={14}
-              type="password"></Input>
+              type="password"
+              value={inputs.confirmPassword}
+              onChange={(e) =>
+                setInputs({ ...inputs, confirmPassword: e.target.value })
+              }></Input>
           ) : null}
 
-          <Button w={"full"} colorScheme="blue" size={"sm"} fontSize={14}>
+          <Button
+            w={"full"}
+            colorScheme="blue"
+            size={"sm"}
+            fontSize={14}
+            onClick={handleAuth}>
             {isLogin ? "Log in" : "Sign up"}
           </Button>
 
@@ -60,12 +97,15 @@ const AuthForm = () => {
         </VStack>
       </Box>
 
-      <Box border={"1px olid gray"} borderRadius={4} padding={5}>
+      <Box border={"1px solid gray"} borderRadius={4} padding={5}>
         <Flex alignItems={"center"} justifyContent={"center"}>
           <Box mx={2} fontSize={14}>
             {isLogin ? "Don't have an account?" : "Already have an account?"}
           </Box>
-          <Box onClick={() => setLogin(!isLogin)} color={"blue.500"} cursor={"pointer"}>
+          <Box
+            onClick={() => setLogin(!isLogin)}
+            color={"blue.500"}
+            cursor={"pointer"}>
             {isLogin ? "sign up" : "Log in"}
           </Box>
         </Flex>
