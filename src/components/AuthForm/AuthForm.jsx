@@ -19,11 +19,11 @@ const AuthForm = () => {
     confirmPassword: "",
   });
   const handleAuth = () => {
-    if (inputs.email || inputs.password || inputs.confirmPassword) {
+    if (!inputs.email || !inputs.password ) {
       alert("please fill all the fields");
       return;
     }
-    navigate("/home");
+    navigate("/");
   };
 
   return (
