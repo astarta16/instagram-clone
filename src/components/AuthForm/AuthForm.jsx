@@ -19,7 +19,7 @@ const AuthForm = () => {
     confirmPassword: "",
   });
   const handleAuth = () => {
-    if (!inputs.email || !inputs.password ) {
+    if (!inputs.email || !inputs.password) {
       alert("please fill all the fields");
       return;
     }
