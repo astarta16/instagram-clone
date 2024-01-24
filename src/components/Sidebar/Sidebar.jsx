@@ -1,6 +1,7 @@
 import { Box, Flex, Link } from "@chakra-ui/react";
 import React from "react";
 import { Link as RouterLink } from "react-router-dom";
+import { InstagramLogo, InstagramMobileLogo } from "../../assests/constants";
 
 function Sidebar() {
   return (
@@ -21,6 +22,19 @@ function Sidebar() {
           display={{ base: "none", md: "block" }}
           cursor="pointer">
           <InstagramLogo />
+        </Link>
+        <Link
+          to={"/"}
+          as={RouterLink}
+          p={2}
+          display={{ base: "block", md: "none" }}
+          cursor="pointer"
+          borderRadius={6}
+          _hover={{
+            bg: "whiteAlpha.200",
+          }}
+          w={10}>
+          <InstagramMobileLogo />
         </Link>
       </Flex>
     </Box>
