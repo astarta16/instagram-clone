@@ -3,7 +3,7 @@ import React, { Children } from "react";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import { useLocation } from "react-router-dom";
 
-const PageLayout = ({ Children }) => {
+const PageLayout = ({ children }) => {
   const { pathname } = useLocation();
   return (
     <Flex>
@@ -13,7 +13,7 @@ const PageLayout = ({ Children }) => {
         </Box>
       ) : null}
       <Box flex={1} w={{ base: "calc(100% - 70px)", md: "calc(100% - 240px)" }}>
-        {Children}
+        {children}
       </Box>
     </Flex>
   );
