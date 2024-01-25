@@ -84,7 +84,7 @@ function Sidebar() {
                 as={RouterLink}
                 alignItems={"center"}
                 gap={4}
-                _hover={{ bg: "whiteAlpha.800" }}
+                _hover={{ bg: "whiteAlpha.400" }}
                 border={6}
                 p={2}
                 w={{base:10, md: "full"}}>
