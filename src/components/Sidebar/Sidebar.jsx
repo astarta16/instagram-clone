@@ -1,4 +1,4 @@
-import { Avatar, Box, Flex, Link } from "@chakra-ui/react";
+import { Avatar, Box, Flex, Link, Tooltip } from "@chakra-ui/react";
 import React from "react";
 import { Link as RouterLink } from "react-router-dom";
 import {
@@ -68,6 +68,33 @@ function Sidebar() {
           w={10}>
           <InstagramMobileLogo />
         </Link>
+        <Flex direction={"column"} gap={5} cursor={"pointer"}>
+          {sidebarItems.map((item, index) => (
+            <Tooltip
+            hasArrow
+            label = {item.text}
+            placement="right"
+            ml={1}
+            openDelay={500}
+            display={{base: 'block', md: 'none'}}
+            >
+              <Link
+              display={"flex"}
+              // to = {}
+              as={RouterLink}
+              alignItems={"center"}
+              gap={4}
+              _hover={{bg: "whiteAlpha.800"}}
+              border={6}
+              p={2}
+              w={10}>
+
+              </Link>
+              
+            </Tooltip>
+
+          ))}
+        </Flex>
       </Flex>
     </Box>
   );
