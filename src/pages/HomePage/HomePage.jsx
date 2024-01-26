@@ -1,10 +1,17 @@
-import React from 'react'
+import { Container, Flex } from "@chakra-ui/react"
 
-function HomePage() {
+const HomePage =() => {
   return (
-    <div>
-      homepage
-    </div>
+   <Container maxW={"container.lg"}>
+    <Flex>
+      <Box>
+        FeedPosts
+      </Box>
+      <Box>
+        Suggested
+      </Box>
+    </Flex>
+   </Container>
   )
 }
 
