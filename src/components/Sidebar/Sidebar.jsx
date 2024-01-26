@@ -11,6 +11,8 @@ import {
 
 
 import { AiFillHome } from "react-icons/ai";
+import { BiLogOut } from "react-icons/ai";
+
 
 function Sidebar() {
   const sidebarItems = [
@@ -72,6 +74,7 @@ function Sidebar() {
         <Flex direction={"column"} gap={5} cursor={"pointer"}>
           {sidebarItems.map((item, index) => (
             <Tooltip
+            key={index}
               hasArrow
               label={item.text}
               placement="right"
@@ -96,6 +99,29 @@ function Sidebar() {
             </Tooltip>
           ))}
         </Flex>
+        <Tooltip
+              hasArrow
+              label={"Log out"}
+              placement="right"
+              ml={1}
+              openDelay={500}
+              display={{ base: "block", md: "none" }}>
+              <Link    
+                display={"flex"}
+                to={"/auth"}
+                as={RouterLink}
+                alignItems={"center"}
+                gap={4}
+                _hover={{ bg: "whiteAlpha.400" }}
+                border={6}
+                p={2}
+                w={{base:10, md: "full"}}
+                justifyContent={{base:"center", md:"flex-start"}}>
+                
+                <BiLogOut size= {25} />
+                <Box display={{ base: "none", md: "block" }}>Logout</Box>
+              </Link>
+            </Tooltip>
       </Flex>
     </Box>
   );
