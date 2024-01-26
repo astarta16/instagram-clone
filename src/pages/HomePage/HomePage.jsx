@@ -1,18 +1,23 @@
-import { Container, Flex } from "@chakra-ui/react"
+import { Container, Flex, Box } from "@chakra-ui/react";
 
-const HomePage =() => {
+const HomePage = () => {
   return (
-   <Container maxW={"container.lg"}>
-    <Flex>
-      <Box>
-        FeedPosts
-      </Box>
-      <Box>
-        Suggested
-      </Box>
-    </Flex>
-   </Container>
-  )
-}
+    <Container maxW={"container.lg"}>
+      <Flex gap={20}>
+        <Box flex={2} py={10} border={"1px solid red"}>
+          FeedPosts
+        </Box>
+        <Box
+          flex={3}
+          mr={20}
+          display={{ base: "none", lg: "block" }}
+          border={"1px solid red"}
+          maxW={"300px"}>
+          Suggested
+        </Box>
+      </Flex>
+    </Container>
+  );
+};
 
-export default HomePage
+export default HomePage;
