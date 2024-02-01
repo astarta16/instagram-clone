@@ -20,7 +20,7 @@ const PostFooter = () => {
     }
   };
   return (
-    <>
+    <Box my={4}>
       <Flex alignItems={"center"} gap={4} w={"full"} pt={0} mb={2} mt={4}>
         <Box onClick={handleLike} cursor={"pointer"}>
           {!liked ? <NotificationsLogo /> : <UnlikeLogo />}
@@ -62,7 +62,7 @@ const PostFooter = () => {
           </InputRightElement>
         </InputGroup>
       </Flex>
-    </>
+    </Box>
   );
 };
 
