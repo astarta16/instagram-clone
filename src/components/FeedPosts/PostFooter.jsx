@@ -1,6 +1,6 @@
 import { Flex, Box } from "@chakra-ui/react";
 import React, { useState } from "react";
-import { NotificationsLogo, UnlikeLogo } from "../../assets/constants";
+import { CommentLogo, NotificationsLogo, UnlikeLogo } from "../../assets/constants";
 
 const PostFooter = () => {
   const [liked, setLiked] = useState(false);
@@ -21,6 +21,12 @@ const PostFooter = () => {
         <Box onClick={handleLike} cursor={"pointer"}>
           {!liked ? <NotificationsLogo /> : <UnlikeLogo />}
         </Box>
+
+        <Box cursor={"pointer"} fontSize={18}>
+          <CommentLogo />
+        </Box>
+
+
       </Flex>
     </>
   );
