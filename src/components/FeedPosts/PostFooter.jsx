@@ -42,6 +42,10 @@ const PostFooter = () => {
         <Text fontSize='sm' color={"gray"}>
           View all 1,000 comments
         </Text>
+        
+        <Flex alignItems={"center"} gap={2} justifyContent={"space-between"} w={"full"}>
+
+        </Flex>
     </>
   );
 };
