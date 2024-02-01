@@ -21,7 +21,7 @@ const PostFooter = () => {
   };
   return (
     <>
-      <Flex alignItems={"center"} gap={4} w={"full"} pt={0} mb={2} mt={"auto"}>
+      <Flex alignItems={"center"} gap={4} w={"full"} pt={0} mb={2} mt={4}>
         <Box onClick={handleLike} cursor={"pointer"}>
           {!liked ? <NotificationsLogo /> : <UnlikeLogo />}
         </Box>
