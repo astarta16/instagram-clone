@@ -32,8 +32,16 @@ const PostFooter = () => {
       </Flex>
       <Text fontWeight={600} fontSize={"sm"}>
         {likes} likes
-
       </Text>
+      <Text fontWeight={700} fontSize={"sm"}>
+        asaprogrammer_{""}
+        <Text as="span" fontWeight={400}>
+          Feeling good
+        </Text>
+        </Text>
+        <Text fontSize='sm' color={"gray"}>
+          View all 1,000 comments
+        </Text>
     </>
   );
 };
