@@ -1,4 +1,5 @@
 import {
+  Box,
   Container,
   Flex,
   Skeleton,
@@ -29,6 +30,9 @@ const FeedPosts = () => {
                 <SkeletonCircle height="10px" w={"200px"} />
               </VStack>
             </Flex>
+            <Skeleton w={"full"}>
+              <Box h={"500px"}> contents wrappet</Box>
+            </Skeleton>
           </VStack>
         ))}
       <FeedPost img="/img1.png" username="ssd" avatar="/img1.png" />
