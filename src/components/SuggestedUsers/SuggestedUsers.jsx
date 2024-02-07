@@ -1,11 +1,13 @@
+import { VStack } from '@chakra-ui/react'
 import React from 'react'
+import SuggestedHeader from './SuggestedHeader'
 
 function SuggestedUsers() {
-  return (
-    <div>
-      
-    </div>
-  )
+  return <VStack py={8} px={6} gap={4}>
+    <SuggestedHeader />
+
+
+  </VStack>
 }
 
 export default SuggestedUsers
