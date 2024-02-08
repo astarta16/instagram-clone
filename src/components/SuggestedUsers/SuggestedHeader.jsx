@@ -12,8 +12,14 @@ function SuggestedHeader() {
         </Text>
       </Flex>
       <Link
+      as={RouterLink}
+      to={"/auth"}
+      fontSize={14}
+      fontWeight={"medium"}
+      color={"blue.400"}
+      cursor={"point"}
       
-      ></Link>
+      >Log out</Link>
     </Flex>
   );
 }
