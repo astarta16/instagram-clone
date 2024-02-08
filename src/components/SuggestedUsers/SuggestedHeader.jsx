@@ -1,5 +1,6 @@
-import { Avatar, Box, Flex } from "@chakra-ui/react";
+import { Avatar, Box, Flex, Link } from "@chakra-ui/react";
 import React from "react";
+import {Link as RouterLink} from 'react-router-dom'
 
 function SuggestedHeader() {
   return (
@@ -10,6 +11,9 @@ function SuggestedHeader() {
           asaprogrammer_
         </Text>
       </Flex>
+      <Link
+      
+      ></Link>
     </Flex>
   );
 }
