@@ -17,6 +17,7 @@ function SuggestedHeader() {
       fontSize={14}
       fontWeight={"medium"}
       color={"blue.400"}
+      style={{textDecoration: "true"}}
       cursor={"point"}
       
       >Log out</Link>
