@@ -1,6 +1,7 @@
-import { Text, Flex, VStack } from "@chakra-ui/react";
-import React from "react";
+import { Flex, VStack } from "@chakra-ui/react";
 import SuggestedHeader from "./SuggestedHeader";
+import SuggestedUser from "./SuggestedUser";
+import { Text } from "@chakra-ui/react";
 
 function SuggestedUsers() {
   return (
@@ -11,12 +12,18 @@ function SuggestedUsers() {
         <Text fontSize={12} fontWeight={"bold"} color={"gray.500"}>
           Suggested for you
         </Text>
+
         <Text
           fontSize={12}
           fontWeight={"bold"}
           _hover={{ color: "gray.400" }}
-          cursor={"pointer"}>See All</Text>
+          cursor={"pointer"}>
+          See All
+        </Text>
       </Flex>
+      <SuggestedUser />
+      <SuggestedUser />
+      <SuggestedUser />
     </VStack>
   );
 }
