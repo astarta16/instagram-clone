@@ -1,4 +1,4 @@
-import { Avatar, Box, Flex, Link } from "@chakra-ui/react";
+import { Avatar, Box, Flex, Link, Text } from "@chakra-ui/react";
 import React from "react";
 import {Link as RouterLink} from 'react-router-dom'
 
