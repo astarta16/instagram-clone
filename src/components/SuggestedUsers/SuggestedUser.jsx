@@ -10,6 +10,9 @@ const SuggestedUser = ({ followers, name, avatar }) => {
           <Box fontSize={12} fontWeight={"bold"}>
             {name}
           </Box>
+          <Box fontSize={11} color={"gray.500"}>
+            {followers} followers
+          </Box>
         </VStack>
       </Flex>
       <Button></Button>
