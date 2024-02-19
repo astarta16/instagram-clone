@@ -1,6 +1,6 @@
 import React from 'react'
 
-function SuggestedUser() {
+function SuggestedUser({followers, name, avatar}) {
   return (
     <div>
       

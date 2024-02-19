@@ -1,4 +1,4 @@
-import { Flex, VStack } from "@chakra-ui/react";
+import { Box, Flex, VStack } from "@chakra-ui/react";
 import SuggestedHeader from "./SuggestedHeader";
 import SuggestedUser from "./SuggestedUser";
 import { Text } from "@chakra-ui/react";
@@ -21,9 +21,11 @@ function SuggestedUsers() {
           See All
         </Text>
       </Flex>
-      <SuggestedUser />
-      <SuggestedUser />
-      <SuggestedUser />
+      <SuggestedUser name='nini gedeshuri' followers={1300} avatar =''/>
+      <SuggestedUser name='nini gedeshuri' followers={1300} avatar ='' />
+      <SuggestedUser name='nini gedeshuri' followers={1300} avatar ='' />
+
+      
     </VStack>
   );
 }
