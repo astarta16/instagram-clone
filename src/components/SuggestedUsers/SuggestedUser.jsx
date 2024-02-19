@@ -7,7 +7,7 @@ const SuggestedUser = ({ followers, name, avatar }) => {
     <Flex w={"full"} justifyContent={"space-between"} alignItems={"center"}>
       <Flex alignItems={"center"} gap={2}>
         <Avatar src={avatar} name={name} size={"md"} />
-        <VStack spacing={2}>
+        <VStack spacing={2} alignItems={"flex-start"}>
           <Box fontSize={12} fontWeight={"bold"}>
             {name}
           </Box>
