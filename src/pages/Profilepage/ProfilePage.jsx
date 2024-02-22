@@ -1,21 +1,22 @@
-import { Container, Flex } from '@chakra-ui/react'
-import React from 'react'
+import { Container, Flex } from "@chakra-ui/react";
+import React from "react";
 
-const ProfilePage = () =>{
-  return <Container maxW="container.lg" py={5}>
-    <Flex
-    py={10}
-    px={4}
-    pl={{base:4, md:10}}
-    w={"full"}
-    mx={"auto"}
-    flexDirection={"column"}
-    
-    ></Flex>
+const ProfilePage = () => {
+  return (
+    <Container maxW="container.lg" py={5}>
+      <Flex
+        py={10}
+        px={4}
+        pl={{ base: 4, md: 10 }}
+        w={"full"}
+        mx={"auto"}
+        flexDirection={"column"}>
+        <ProfileHeader />
+      </Flex>
 
-    <Flex></Flex>
+      <Flex>ProfileTabs ProfilePosts</Flex>
+    </Container>
+  );
+};
 
-  </Container>
-}
-
-export default ProfilePage
+export default ProfilePage;
