@@ -1,4 +1,4 @@
-import { Avatar, AvatarGroup, Flex, VStack } from "@chakra-ui/react";
+import { Avatar, AvatarGroup, Flex, VStack, Text } from "@chakra-ui/react";
 import React from "react";
 
 function ProfileHeader() {
@@ -17,7 +17,13 @@ function ProfileHeader() {
           gap={4}
           direction={{ base: "column", sm: "row" }}
           justifyContent={{ base: "center", sm: "flex-start" }}
-          alignItems={"center"}></Flex>
+          alignItems={"center"}
+          w={"full"}
+          >
+            <Text fontSize={{base:"sm", md:"lg"}}>
+              programmer
+            </Text>
+          </Flex>
       </VStack>
     </Flex>
   );
