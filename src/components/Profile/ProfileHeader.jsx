@@ -43,8 +43,23 @@ function ProfileHeader() {
           <Text>
             <Text as="span" fontWeight={"bold"} mr={1}>
               {" "}
-              Posts
+             4
             </Text>
+            Posts
+          </Text>
+          <Text>
+            <Text as="span" fontWeight={"bold"} mr={1}>
+              {" "}
+              123
+            </Text>
+            Followers
+          </Text>
+          <Text>
+            <Text as="span" fontWeight={"bold"} mr={1}>
+              {" "}
+              323
+            </Text>
+            Following
           </Text>
         </Flex>
       </VStack>
