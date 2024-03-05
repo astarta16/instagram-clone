@@ -43,7 +43,7 @@ function ProfileHeader() {
           <Text>
             <Text as="span" fontWeight={"bold"} mr={1}>
               {" "}
-             4
+              4
             </Text>
             Posts
           </Text>
@@ -60,6 +60,11 @@ function ProfileHeader() {
               323
             </Text>
             Following
+          </Text>
+        </Flex>
+        <Flex alignItems={"center"} gap={4}>
+          <Text fontSize={"sm"} fontWeight={"bold"}>
+            As a programmer
           </Text>
         </Flex>
       </VStack>
