@@ -39,16 +39,14 @@ function ProfileHeader() {
           </Flex>
         </Flex>
 
-        <Flex alignItems={"center"} gap={{base:2, sm:4}}>
+        <Flex alignItems={"center"} gap={{ base: 2, sm: 4 }}>
           <Text>
-            <Text>
-              
+            <Text as="span" fontWeight={"bold"} mr={1}>
+              {" "}
+              Posts
             </Text>
           </Text>
-
         </Flex>
-
-        
       </VStack>
     </Flex>
   );
