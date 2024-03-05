@@ -67,6 +67,7 @@ function ProfileHeader() {
             As a programmer
           </Text>
         </Flex>
+        <Text fontSize={"sm"}>level up your skills every day </Text>
       </VStack>
     </Flex>
   );
