@@ -1,4 +1,11 @@
-import { Avatar, AvatarGroup, Flex, VStack, Text, Button } from "@chakra-ui/react";
+import {
+  Avatar,
+  AvatarGroup,
+  Flex,
+  VStack,
+  Text,
+  Button,
+} from "@chakra-ui/react";
 import React from "react";
 
 function ProfileHeader() {
@@ -22,13 +29,26 @@ function ProfileHeader() {
           <Text fontSize={{ base: "sm", md: "lg" }}>programmer</Text>
 
           <Flex gap={4} alignItems={"center"} justifyContent={"center"}>
-            <Button bg={"white"} color={"black"} _hover={{bg:"white"}} size={{base:"xs", md:"sm"}}>
-Edit profile
+            <Button
+              bg={"white"}
+              color={"black"}
+              _hover={{ bg: "white" }}
+              size={{ base: "xs", md: "sm" }}>
+              Edit profile
             </Button>
           </Flex>
+        </Flex>
 
+        <Flex alignItems={"center"} gap={{base:2, sm:4}}>
+          <Text>
+            <Text>
+              
+            </Text>
+          </Text>
 
         </Flex>
+
+        
       </VStack>
     </Flex>
   );
