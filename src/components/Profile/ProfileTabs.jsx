@@ -1,11 +1,14 @@
-import React from 'react'
+import { Flex } from "@chakra-ui/react";
 
-function ProfileTabs() {
+const ProfileTabs = () => {
   return (
-    <div>
-      tabs
-    </div>
-  )
-}
+    <Flex
+      w={"full"}
+      justifyContent={"center"}
+      gap={{ base: 4, sm: 10 }}
+      textTransform={"uppercase"}
+      fontWeight={"bold"}></Flex>
+  );
+};
 
-export default ProfileTabs
+export default ProfileTabs;
