@@ -23,7 +23,7 @@ const ProfileTabs = () => {
           <BsBookmark/>
         </Box>
         <Text fontSize={12} display={{base:"none", sm:"block"}}>
-          saved
+          Saved
         </Text>
       </Flex>
 
