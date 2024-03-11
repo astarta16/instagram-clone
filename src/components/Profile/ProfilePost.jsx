@@ -8,7 +8,7 @@ import { GridItem } from "@chakra-ui/react"
   border={"1px solid"}
   borderColor={"white"}
   position={"relative"}
-
+  aspectRatio={1/1}
   
   >
 
