@@ -1,8 +1,8 @@
-import { Flex, GridItem, Text } from "@chakra-ui/react";
+import { Flex, GridItem, Text, Image } from "@chakra-ui/react";
 import { AiFillHeart } from "react-icons/ai";
-import {FaComment} from 'react-icons/fa'
+import { FaComment } from "react-icons/fa";
 
-const ProfilePost = () => {
+const ProfilePost = ({img}) => {
   return (
     <GridItem
       cursor={"pointer"}
@@ -30,14 +30,17 @@ const ProfilePost = () => {
               7
             </Text>
           </Flex>
-<Flex>
-<FaComment size={20} />  
-<Text fontWeight={"bold"} ml={2}>7</Text>
-</Flex>
-
-
+          <Flex>
+            <FaComment size={20} />
+            <Text fontWeight={"bold"} ml={2}>
+              7
+            </Text>
+          </Flex>
         </Flex>
       </Flex>
+
+<Image src={img} alt="profile post" w={"100%"} h={"100%"} objectFit={"cover"}/>
+
     </GridItem>
   );
 };
