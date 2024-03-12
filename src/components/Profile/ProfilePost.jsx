@@ -1,6 +1,6 @@
 import { Flex, GridItem, Text } from "@chakra-ui/react";
-import {AiFillHeart} from "react-icons/ai";
-
+import { AiFillHeart } from "react-icons/ai";
+import {FaComment} from 'react-icons/fa'
 
 const ProfilePost = () => {
   return (
@@ -12,10 +12,9 @@ const ProfilePost = () => {
       borderColor={"white"}
       position={"relative"}
       aspectRatio={1 / 1}>
-
-        <Flex
+      <Flex
         opacity={0}
-        _hover={{opacity:1}}
+        _hover={{ opacity: 1 }}
         position={"absolute"}
         top={0}
         left={0}
@@ -23,18 +22,23 @@ const ProfilePost = () => {
         bottom={0}
         bg={"blackAlpha.700"}
         zIndex={1}
-        justifyContent={"center"}
-        >
-
-         <Flex alignItems={"center"} justifyContent={"center"} gap={50}>
+        justifyContent={"center"}>
+        <Flex alignItems={"center"} justifyContent={"center"} gap={50}>
           <Flex>
             <AiFillHeart size={20} />
-            <Text fontWeight={"bold"} ml={2}> 7 </Text>
+            <Text fontWeight={"bold"} ml={2}>
+              7
+            </Text>
           </Flex>
-          </Flex> 
+<Flex>
+<FaComment size={20} />  
+<Text fontWeight={"bold"} ml={2}>7</Text>
+</Flex>
+
 
         </Flex>
-      </GridItem>
+      </Flex>
+    </GridItem>
   );
 };
 
