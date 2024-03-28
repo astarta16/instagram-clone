@@ -1,8 +1,10 @@
-import { Flex, GridItem, Text, Image } from "@chakra-ui/react";
+import { Flex, GridItem, Text, Image, useDisclosure } from "@chakra-ui/react";
 import { AiFillHeart } from "react-icons/ai";
 import { FaComment } from "react-icons/fa";
 
 const ProfilePost = ({ img }) => {
+  const {isOpen, onOpen, onClose } = useDisclosure()
+
   return (
     <GridItem
       cursor={"pointer"}
@@ -11,7 +13,10 @@ const ProfilePost = ({ img }) => {
       border={"1px solid"}
       borderColor={"white"}
       position={"relative"}
-      aspectRatio={1 / 1}>
+      aspectRatio={1 / 1}
+      onClick={onOpen}
+      >
+      
       <Flex
         opacity={0}
         _hover={{ opacity: 1 }}
