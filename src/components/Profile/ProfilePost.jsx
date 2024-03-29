@@ -10,6 +10,7 @@ import {
   ModalHeader,
   ModalCloseButton,
   ModalBody,
+  Box,
 } from "@chakra-ui/react";
 import { AiFillHeart } from "react-icons/ai";
 import { FaComment } from "react-icons/fa";
