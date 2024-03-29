@@ -72,7 +72,10 @@ const ProfilePost = ({ img }) => {
         <ModalContent>
           <ModalHeader>Modal header</ModalHeader>
           <ModalCloseButton />
-          <ModalBody>
+          <ModalBody bg={"black"} pb={5}>
+            <Flex gap="4" w={{base: "90%", sm: "70%", md:"full"}} mx={"auto"}>
+              <Box></Box>
+            </Flex>
             
           </ModalBody>
         </ModalContent>
