@@ -76,7 +76,7 @@ const ProfilePost = ({ img }) => {
           <ModalBody bg={"black"} pb={5}>
             <Flex gap="4" w={{base: "90%", sm: "70%", md:"full"}} mx={"auto"}>
               <Box borderRadius = {4}
-              overflow= {"hidder"}
+              overflow= {"hidden"}
               border = {"1px solid"}
               borderColor = {"white"}
               Flex = {1.5}
