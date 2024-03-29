@@ -64,12 +64,17 @@ const ProfilePost = ({ img }) => {
         />
       </GridItem>
 
-      <Modal isOpen={isOpen} onClose={onClose}>
+      <Modal isOpen={isOpen} onClose={onClose} 
+      isCentered = {true}
+      size={{base:"3xl", md:"5xl"}}
+      >
         <ModalOverlay />
         <ModalContent>
           <ModalHeader>Modal header</ModalHeader>
           <ModalCloseButton />
-          <ModalBody></ModalBody>
+          <ModalBody>
+            
+          </ModalBody>
         </ModalContent>
       </Modal>
     </>
