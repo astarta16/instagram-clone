@@ -12,6 +12,7 @@ import {
   ModalBody,
   Box,
   Avatar,
+  Divider,
 } from "@chakra-ui/react";
 import { AiFillHeart } from "react-icons/ai";
 import { FaComment } from "react-icons/fa";
@@ -110,6 +111,7 @@ const ProfilePost = ({ img }) => {
                     <MdDelete size={20} cursor="pointer" />
                   </Box>
                 </Flex>
+                <Divider my={4} bg={"gray.500"}/>
               </Flex>
             </Flex>
           </ModalBody>
