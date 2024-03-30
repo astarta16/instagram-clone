@@ -11,9 +11,11 @@ import {
   ModalCloseButton,
   ModalBody,
   Box,
+  Avatar,
 } from "@chakra-ui/react";
 import { AiFillHeart } from "react-icons/ai";
 import { FaComment } from "react-icons/fa";
+import {MdDelete} from 'react-icons/md'
 
 const ProfilePost = ({ img }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -94,7 +96,13 @@ const ProfilePost = ({ img }) => {
                 display={{ base: "none", md: "flex" }}>
                 <Flex
                   alignItems={"center"}
-                  justifyContent={"space-between"}></Flex>
+                  justifyContent={"space-between"}>
+                    <Avatar src='/profilepic.png' size={"sm"} name='Programer'></Avatar>
+                    <Text fontWeight={"bold"} fontSize={12}>Programmer</Text>
+                  </Flex>
+                  <Box _hover={{bg: "white", color:"red.600"}} borderRadius={4} p={1}>
+                    <MdDelete size={20} cursor="pointer"/>
+                  </Box>
               </Flex>
             </Flex>
           </ModalBody>
