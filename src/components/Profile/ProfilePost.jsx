@@ -7,16 +7,17 @@ import {
   Modal,
   ModalOverlay,
   ModalContent,
-  ModalHeader,
   ModalCloseButton,
   ModalBody,
   Box,
   Avatar,
   Divider,
+  VStack,
 } from "@chakra-ui/react";
 import { AiFillHeart } from "react-icons/ai";
 import { FaComment } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
+import Comment from "../Comment/Comment";
 
 const ProfilePost = ({ img }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -111,7 +112,31 @@ const ProfilePost = ({ img }) => {
                     <MdDelete size={20} cursor="pointer" />
                   </Box>
                 </Flex>
-                <Divider my={4} bg={"gray.500"}/>
+                <Divider my={4} bg={"gray.500"} />
+                <VStack
+                  w={"full"}
+                  alignItems={"start"}
+                  maxH={"350px"}
+                  overflowY={"auto"}>
+                  <Comment
+                    createAt="1d ago"
+                    username="programmer"
+                    profilePic="/profilepic.png"
+                    text="hey there!"
+                  />
+                  <Comment
+                    createAt="1d ago"
+                    username="programmer"
+                    profilePic="/profilepic.png"
+                    text="hey there!"
+                  />
+                  <Comment
+                    createAt="1d ago"
+                    username="programmer"
+                    profilePic="/profilepic.png"
+                    text="hey there!"
+                  />
+                </VStack>
               </Flex>
             </Flex>
           </ModalBody>
