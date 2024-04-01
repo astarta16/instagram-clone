@@ -137,6 +137,30 @@ const ProfilePost = ({ img }) => {
                     profilePic="/profilepic.png"
                     text="hey there!"
                   />
+                  <Comment
+                    createAt="1d ago"
+                    username="programmer"
+                    profilePic="/profilepic.png"
+                    text="hey there!"
+                  />
+                  <Comment
+                    createAt="1d ago"
+                    username="programmer"
+                    profilePic="/profilepic.png"
+                    text="hey there!"
+                  />
+                  <Comment
+                    createAt="1d ago"
+                    username="programmer"
+                    profilePic="/profilepic.png"
+                    text="hey there!"
+                  />
+                  <Comment
+                    createAt="1d ago"
+                    username="programmer"
+                    profilePic="/profilepic.png"
+                    text="hey there!"
+                  />
                 </VStack>
                 <Divider  my={4} bg={"gray.800"}/>
                 <PostFooter isProfilePage={true} />
