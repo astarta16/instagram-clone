@@ -6,7 +6,7 @@ import {
   UnlikeLogo,
 } from "../../assets/constants";
 
-const PostFooter = ({username}) => {
+const PostFooter = ({username, isProfilePage}) => {
   const [liked, setLiked] = useState(false);
   const [likes, setLikes] = useState(1000);
 
@@ -20,7 +20,7 @@ const PostFooter = ({username}) => {
     }
   };
   return (
-    <Box mt={10}>
+    <Box mb={10} marginTop={"auto"}>
       <Flex alignItems={"center"} gap={4} w={"full"} pt={0} mb={2} mt={4}>
         <Box onClick={handleLike} cursor={"pointer"}>
           {!liked ? <NotificationsLogo /> : <UnlikeLogo />}
